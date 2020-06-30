@@ -1,3 +1,5 @@
 from django.conf.urls import url
 from django.contrib import admin
-urlpatterns = [ url(r'^', 'qa.views.test') ]
+from django.conf.urls import include
+
+urlpatterns = [ url(r'^', include('qa.views.test')) ]
