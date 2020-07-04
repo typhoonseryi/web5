@@ -5,5 +5,5 @@ from qa.views import view1, view2, view3
 
 urlpatterns = [ url(r'^$', view1),
                 url(r'^popular/', view2),
-                url(r'^question/(?P<id>\d+)/$', view3),
+                url(r'^question/(?P<id>\d+)', view3),
  ]
