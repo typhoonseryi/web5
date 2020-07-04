@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse 
 from django.core.paginator import Paginator
 from django.http import Http404
+from .models import Question, Answer
 
 
 def view1(request):
