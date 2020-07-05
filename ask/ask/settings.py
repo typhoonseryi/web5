@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'qa',
+    'autofixture',
 ]
 
 MIDDLEWARE = [
@@ -80,6 +81,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'stepic_web',
         'USER': 'box',
+        'PASSWORD': '123',
     }
 }
 

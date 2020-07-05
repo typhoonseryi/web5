@@ -41,12 +41,12 @@ def view2(request):
 
 def view3(request, ident):
     try:
-        question = Question.objects.get(question_id=ident)
+        question = Question.objects.get(id=ident)
     except Question.DoesNotExist:
         raise Http404
     try:
-        answers = Answer.question.filter(question_id=ident)
-    except Answer.DoesNotExist:
+        answers = Answer.objects.filter(question=question)
+    except Question.DoesNotExist:
         answers = None
     return render(request, 'base2.html', {
            'title' : question.title,
